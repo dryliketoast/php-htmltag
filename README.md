@@ -62,16 +62,16 @@ echo "{$foo}";
 <h1 class="border pad right foo">this is a header</h1>
 ```
 
-### Example 05:
+### Example 06:
 ```
-echo new htmlTag('br')->toggle_attr('class','clear');
+echo new htmlTag('br', array('class','clear'));
 ```
 
 ```
 <br class="clear" />
 ```
 
-### Example 06:
+### Example 07:
 ```
 $foo = new htmlTag('img');
 $foo->set_attr('src','Example.jpg');
@@ -84,7 +84,7 @@ echo "{$foo}";
 <img src="Example.jpg" alt="A picture of an Example" class="clear foo" />
 ```
 
-### Example 07:
+### Example 08:
 ```
 $img = new htmlTag('img');
 $img->set_attr('src','Example.jpg');
