@@ -1,18 +1,16 @@
 # php-htmltag
 a very concise HTML tag builder class with support for dynamic attributes
 
-## include the htmlTag class
-`include('class.tags.php');`
+### include the htmlTag class
+```include('class.tags.php');```
 
 ### Example 01:
-`echo new htmlTag('h1', null, "This is a header");`
-Output:
-`<h1>this is a header</h1>`
+```echo new htmlTag('h1', null, "This is a header");```
+```<h1>this is a header</h1>```
 
 ### Example 02:
-`echo new htmlTag('h1', array('class'=>'border pad right'), "This is a header");`
-Output:
-`<h1 class="border pad right">this is a header</h1>`
+```echo new htmlTag('h1', array('class'=>'border pad right'), "This is a header");```
+```<h1 class="border pad right">this is a header</h1>```
 
 ### Example 03:
 ```
@@ -21,8 +19,7 @@ $foo->set_attr(array('class'=>'border pad right'));
 $foo->content = "This is a header";
 echo "{$foo}";
 ```
-Output:
-`<h1 class="border pad right">this is a header</h1>`
+```<h1 class="border pad right">this is a header</h1>```
 
 ### Example 04:
 ```
@@ -32,8 +29,7 @@ $foo->toggle_attr('class','pad');
 $foo->content = "This is a header";
 echo "{$foo}";
 ```
-Output:
-`<h1 class="border right">this is a header</h1>`
+```<h1 class="border right">this is a header</h1>```
 
 ### Example 05:
 ```
@@ -43,13 +39,11 @@ $foo->toggle_attr('class','foo');
 $foo->content = "This is a header";
 echo "{$foo}";
 ```
-Output:
-`<h1 class="border pad right foo">this is a header</h1>`
+```<h1 class="border pad right foo">this is a header</h1>```
 
 ### Example 05:
-`echo new htmlTag('br')->toggle_attr('class','clear');`
-Output:
-`<br class="clear" />`
+```echo new htmlTag('br')->toggle_attr('class','clear');```
+```<br class="clear" />```
 
 ### Example 06:
 ```
@@ -59,8 +53,7 @@ $foo->set_attr('alt','A picture of an Example');
 $foo->toggle_attr('class','border');
 echo "{$foo}";
 ```
-Output:
-`<img src="Example.jpg" alt="A picture of an Example" class="clear foo" />`
+```<img src="Example.jpg" alt="A picture of an Example" class="clear foo" />```
 
 ### Example 07:
 ```
@@ -75,8 +68,7 @@ $div->content = $img;
 
 echo "{$div}";
 ```
-Output:
-`<div class="border"><img src="Example.jpg" alt="A picture of an Example" class="clear foo" /></div>`
+```<div class="border"><img src="Example.jpg" alt="A picture of an Example" class="clear foo" /></div>```
 
 
 
