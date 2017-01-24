@@ -1,5 +1,5 @@
 # php-htmltag
-a very concise HTML tag builder class with support for dynamic attributes
+a simple and concise HTML tag builder class with support for dynamic attributes
 
 ### include the htmlTag class
 ```
