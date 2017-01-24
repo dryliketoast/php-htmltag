@@ -35,7 +35,7 @@ echo "{$foo}";
 // <h1 class="border pad right foo">this is a header</h1>
 
 // ---- EXAMPLE 05:
-echo new htmlTag('br')->toggle_attr('class','clear');
+echo new htmlTag('br', array('class','clear'));
 // <br class="clear" />
 
 // ---- EXAMPLE 06:
