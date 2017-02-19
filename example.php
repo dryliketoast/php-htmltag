@@ -40,7 +40,7 @@ echo "\n";
 // <h1 class="border pad right foo">example 05</h1>
 
 // ---- EXAMPLE 06:
-echo new htmlTag('br', array('class','clear'));
+echo new htmlTag('br', array('class'=>'clear'));
 echo "\n";
 // <br class="clear" />
 
