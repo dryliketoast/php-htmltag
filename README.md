@@ -8,7 +8,7 @@ include('class.tags.php');
 
 ### Example 01:
 ```
-echo new htmlTag('h1', null, "This is a header");
+echo new htmlTag('h1', null, "this is a header");
 ```
 
 ```
@@ -17,7 +17,7 @@ echo new htmlTag('h1', null, "This is a header");
 
 ### Example 02:
 ```
-echo new htmlTag('h1', array('class'=>'border pad right'), "This is a header");
+echo new htmlTag('h1', array('class'=>'border pad right'), "this is a header");
 ```
 
 ```
@@ -28,7 +28,7 @@ echo new htmlTag('h1', array('class'=>'border pad right'), "This is a header");
 ```
 $foo = new htmlTag('h1');
 $foo->set_attr(array('class'=>'border pad right'));
-$foo->content = "This is a header";
+$foo->content = "this is a header";
 echo "{$foo}";
 ```
 
@@ -41,7 +41,7 @@ echo "{$foo}";
 $foo = new htmlTag('h1');
 $foo->set_attr(array('class'=>'border pad right'));
 $foo->toggle_attr('class','pad');
-$foo->content = "This is a header";
+$foo->content = "this is a header";
 echo "{$foo}";
 ```
 
@@ -54,7 +54,7 @@ echo "{$foo}";
 $foo = new htmlTag('h1');
 $foo->set_attr(array('class'=>'border pad right'));
 $foo->toggle_attr('class','foo');
-$foo->content = "This is a header";
+$foo->content = "this is a header";
 echo "{$foo}";
 ```
 
@@ -88,7 +88,7 @@ echo "{$foo}";
 ```
 $img = new htmlTag('img');
 $img->set_attr('src','Example.jpg');
-$img->set_attr('alt','A picture of an Example');
+$img->set_attr('alt','man in a hat');
 $img->toggle_attr('class','border');
 
 $div = new htmlTag('div');
@@ -99,7 +99,7 @@ echo "{$div}";
 ```
 
 ```
-<div class="border"><img src="Example.jpg" alt="A picture of an Example" class="clear foo" /></div>
+<div class="border"><img src="Example.jpg" alt="man in a hat" class="clear foo" /></div>
 ```
 
 
